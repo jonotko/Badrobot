@@ -1,0 +1,6 @@
+- Add functionality to social media buttons
+- To apply header and footer changes to all pages
+- Make the shop feature fully functional
+- Typography adjustments throughout the page
+- SEO
+- Do media queries

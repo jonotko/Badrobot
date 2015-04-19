@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="slider/anythingslider.css" rel="stylesheet"> <!-- css for slider to work, you can always override-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="slider/jquery.anythingslider.min.js"></script> <!-- loads slider plug in -->
+    
+    <!--Responsive Slider importing-->
+    
+    <script src="jquery.bxslider/jquery.bxslider.js"></script>
+    <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    
+    <!-- see the body section first -->
+    
+    <script>
+        
+        // I assume you know jQuerywhen you see it
+        $(document).ready(function () {
+            // calling the slider is this easy
+            $('#slider').anythingSlider(); 
+            
+            //useful functions
+             //autoPlay : true,
+             //startText : "Start slideshow",
+             //stopText : "Stop slideshow",
+             //buildArrows : false,
+             //buildStartStop : false,
+             //vertical: true
+            
+            /* Functionc explained
+            *
+            *After every function place a comma, except the last one
+            *Place all functions inside the anythingSlider function between a pair of curly brackets, see below
+            *
+            *set autoPlay to true the slider will start automatically
+            *set startText, stopText to what ever text you'd like displayed on the buttons
+            *set buildArrows to false will remove the left and right arrows on the slider
+            *set buildStartStop to false will remove the stop and start button
+            *set vertical to true the slides move up and down instead of left to right
+            *
+            *Any questions you know where to find me 
+            *
+            */
+            
+            /* Example applying functions 
+            *
+            * $('#slider).anythingSlider({
+            *   autoPlay : true,
+            *   buildArrows : false,
+            *   buildStartStop : false
+            *});
+            */
+                 
+        
+        });
+    
+    </script>
+    
+
+    
+    
+    
+</head>
+    
+<body>
+    <div id="slider"> <!-- necessary for slider to work. Place this div wherever you want the slider to appear -->
+        
+        <!-- Wrap images for slider in a div -->
+        
+        <!-- First image for slider -->
+        <div>
+            <a href="#"><img src="slider/images/grapes.jpg" width="700" height="390"></a> 
+        </div>
+        
+        <!-- Second image for slider -->
+        <div>
+            <a href="#"><img src="slider/images/pumpkin.jpg" width="700" height="390"></a>
+        </div>
+        
+        <!-- Third image for slider -->
+        <div>
+            <a href="#"><img src="slider/images/various.jpg" width="700" height="390"></a>
+        </div>
+        
+        <!-- Add as many divs as you like -->
+        <!-- Now go back to the head for the fun part -->
+    
+    </div>
+    
+    <!--My slider test starts here-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.bxslider').bxSlider();
+        });  
+    </script>
+    
+    <ul class="bxslider">
+      <li><img src="/slider/images/grapes.jpg" /></li>
+      <li><img src="/slider/images/pumpkin.jpg" /></li>
+      <li><img src="/slider/images/scallop.png" /></li>
+    </ul>
+    
+
+    
+</body>
+
+
+
+</html>
